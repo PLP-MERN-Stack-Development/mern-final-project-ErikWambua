@@ -1,0 +1,111 @@
+{
+  "auth": {
+    "register": {
+      "success": "Usajili umefanikiwa. Tafadhali thibitisha nambari yako ya simu.",
+      "phone_exists": "Mtumiaji tayari anapatikana na nambari hii ya simu",
+      "invalid_phone": "Tafadhali toa nambari halali ya simu ya Kenya",
+      "weak_password": "Nenosiri lazima liwe na angalau herufi 6"
+    },
+    "login": {
+      "success": "Umeingia kikamilifu",
+      "invalid_credentials": "Nambari ya simu au nenosiri sio sahihi",
+      "not_verified": "Tafadhali thibitisha nambari yako ya simu kwanza"
+    },
+    "verify": {
+      "success": "Nambari ya simu imethibitishwa",
+      "invalid_code": "Msimbo wa uthibitisho sio sahihi au umeisha",
+      "code_sent": "Msimbo wa uthibitisho umepelekwa kwenye simu yako"
+    },
+    "logout": {
+      "success": "Umetoka kikamilifu"
+    }
+  },
+  "passenger": {
+    "routes": {
+      "not_found": "Njia haijapatikana",
+      "no_active_trips": "Hakuna safari zinazoendelea kwenye njia hii"
+    },
+    "reservations": {
+      "success": "Uhifadhi umefanywa kikamilifu",
+      "no_capacity": "Gari limejaa",
+      "trip_unavailable": "Safari haipatikani kwa ajili ya uhifadhi",
+      "cancelled": "Uhifadhi umeondolewa kikamilifu",
+      "expired": "Uhifadhi umeisha",
+      "not_found": "Uhifadhi haujapatikana"
+    },
+    "alerts": {
+      "reported": "Taarifa imeripotiwa kikamilifu",
+      "confirmed": "Taarifa imethibitishwa",
+      "not_found": "Taarifa haijapatikana"
+    },
+    "favorites": {
+      "added": "Imeongezwa kwa vipendwa",
+      "removed": "Imeondolewa kwenye vipendwa",
+      "already_favorited": "Tayari iko kwenye vipendwa"
+    }
+  },
+  "driver": {
+    "trip": {
+      "started": "Safari imeanzishwa kikamilifu",
+      "ended": "Safari imekwisha",
+      "cancelled": "Safari imebatilishwa",
+      "no_active": "Hakuna safari inayoendelea",
+      "already_active": "Tayari una safari inayoendelea",
+      "not_authorized": "Hujapewa gari hili",
+      "location_updated": "Eneo limesasishwa",
+      "crowd_updated": "Kiwango cha wasafiri kimesasishwa"
+    },
+    "reservations": {
+      "boarded": "Abiria amesajiliwa"
+    },
+    "status": {
+      "updated": "Hali imesasishwa kuwa {status}"
+    }
+  },
+  "sacco": {
+    "vehicle": {
+      "added": "Gari limeongezwa kikamilifu",
+      "updated": "Gari limesasishwa kikamilifu",
+      "not_found": "Gari halijapatikana",
+      "duplicate_plate": "Gari lenye nambari hii ya usajili tayari lipo"
+    },
+    "driver": {
+      "assigned": "Dereva amepewa kazi",
+      "not_found": "Dereva hajapatikana"
+    },
+    "route": {
+      "added": "Njia imeongezwa kikamilifu",
+      "removed": "Njia imeondolewa kikamilifu"
+    },
+    "announcement": {
+      "sent": "Tangazo limepelekwa kikamilifu"
+    }
+  },
+  "payments": {
+    "mpesa": {
+      "initiated": "Ombi la malipo limepelekwa kwenye simu yako",
+      "success": "Malipo yamefanikiwa",
+      "failed": "Malipo yameshindikana",
+      "pending": "Malipo yanasubiri",
+      "invalid_phone": "Umbo la nambari ya simu sio sahihi"
+    }
+  },
+  "errors": {
+    "server": "Hitilafu ya seva imetokea",
+    "not_found": "Rasilimali haijapatikana",
+    "unauthorized": "Huna ruhusa ya kufikia rasilimali hii",
+    "validation": "Hitilafu ya uthibitishaji",
+    "rate_limit": "Maombi mengi sana, tafadhali jaribu tena baadaye",
+    "database": "Hitilafu ya hifadhi data"
+  },
+  "success": {
+    "general": "Uendeshaji umekamilika kikamilifu"
+  },
+  "notifications": {
+    "trip_reminder": "Matatu yako kwenye {route} inakaribu dakika {minutes}",
+    "payment_confirmed": "Malipo yako ya KSh {amount} yamethibitishwa",
+    "reservation_confirmed": "Uhifadhi wako wa {route} umethibitishwa",
+    "trip_cancelled": "Safari yako kwenye {route} imebatilishwa",
+    "new_alert": "Taarifa mpya: {type} imeripotiwa katika eneo lako"
+  }
+}
