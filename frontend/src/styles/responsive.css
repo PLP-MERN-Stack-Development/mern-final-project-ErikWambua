@@ -1,0 +1,435 @@
+/* MatPulse254 Responsive Utilities */
+
+/* === Custom Breakpoints === */
+/* xs: 0-639px (Mobile) */
+/* sm: 640px-767px (Large Mobile) */
+/* md: 768px-1023px (Tablet) */
+/* lg: 1024px-1279px (Desktop) */
+/* xl: 1280px-1535px (Large Desktop) */
+/* 2xl: 1536px+ (Extra Large Desktop) */
+
+/* === Mobile First (xs) === */
+@media (max-width: 640px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  /* Typography */
+  .heading-1 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  .heading-2 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  /* Layout */
+  .grid-auto-fit,
+  .grid-auto-fill {
+    grid-template-columns: 1fr;
+  }
+
+  /* Cards */
+  .card {
+    padding: 1rem;
+  }
+
+  /* Navigation */
+  .nav-desktop {
+    display: none;
+  }
+
+  .nav-mobile {
+    display: flex;
+  }
+
+  /* Bottom navigation spacing */
+  .has-bottom-nav {
+    padding-bottom: 80px;
+  }
+
+  /* Full width on mobile */
+  .mobile-full-width {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+  }
+
+  /* Hide on mobile */
+  .hide-mobile {
+    display: none !important;
+  }
+
+  /* Stack vertically on mobile */
+  .mobile-stack {
+    flex-direction: column;
+  }
+
+  /* Map adjustments */
+  .map-container {
+    height: 50vh;
+    min-height: 300px;
+  }
+
+  /* Modal full screen on mobile */
+  .modal-content {
+    width: 100%;
+    height: 100%;
+    max-height: 100vh;
+    border-radius: 0;
+  }
+
+  /* Form spacing */
+  .form-group {
+    margin-bottom: 1rem;
+  }
+
+  /* Button sizes */
+  .btn-primary,
+  .btn-secondary,
+  .btn-outline {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+  }
+}
+
+/* === Small Mobile (sm) === */
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+
+  .grid-auto-fit,
+  .grid-auto-fill {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+}
+
+/* === Tablet (md) === */
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+
+  /* Navigation */
+  .nav-mobile {
+    display: none;
+  }
+
+  .nav-desktop {
+    display: flex;
+  }
+
+  /* Grid adjustments */
+  .grid-auto-fit,
+  .grid-auto-fill {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  }
+
+  /* Sidebar layout */
+  .layout-with-sidebar {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 2rem;
+  }
+
+  /* Map container */
+  .map-container {
+    height: 60vh;
+  }
+
+  /* Hide on tablet+ */
+  .hide-tablet {
+    display: none !important;
+  }
+
+  /* Two column forms */
+  .form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+/* === Desktop (lg) === */
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+
+  /* Typography */
+  .heading-1 {
+    font-size: 3rem;
+    line-height: 1.2;
+  }
+
+  .heading-2 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+  }
+
+  /* Grid layouts */
+  .grid-auto-fit,
+  .grid-auto-fill {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+  /* Sidebar */
+  .layout-with-sidebar {
+    grid-template-columns: 300px 1fr;
+  }
+
+  /* Map */
+  .map-container {
+    height: 70vh;
+    min-height: 500px;
+  }
+
+  /* Cards in grid */
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+
+  /* Hide on desktop */
+  .hide-desktop {
+    display: none !important;
+  }
+
+  /* Hover effects enabled */
+  .hover-enabled:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  }
+}
+
+/* === Large Desktop (xl) === */
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+
+  .grid-auto-fit,
+  .grid-auto-fill {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  }
+
+  /* Wider sidebar */
+  .layout-with-sidebar {
+    grid-template-columns: 320px 1fr;
+  }
+
+  /* Map */
+  .map-container {
+    height: 75vh;
+  }
+
+  /* Cards in grid */
+  .card-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* === Extra Large Desktop (2xl) === */
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+
+  .card-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+/* === Touch Device Optimizations === */
+@media (hover: none) and (pointer: coarse) {
+  /* Larger tap targets */
+  button,
+  a,
+  .clickable {
+    min-height: 44px;
+    min-width: 44px;
+    padding: 0.75rem 1.5rem;
+  }
+
+  /* Disable hover effects */
+  .hover-lift:hover,
+  .hover-grow:hover,
+  .hover-glow:hover {
+    transform: none;
+    box-shadow: none;
+  }
+
+  /* Better scrolling */
+  * {
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* Prevent text selection on touch */
+  .no-select-touch {
+    -webkit-user-select: none;
+    user-select: none;
+  }
+}
+
+/* === Landscape Orientation === */
+@media (orientation: landscape) and (max-height: 600px) {
+  /* Compact header on landscape mobile */
+  .header {
+    padding: 0.5rem 1rem;
+  }
+
+  /* Reduce map height */
+  .map-container {
+    height: 85vh;
+  }
+
+  /* Hide non-essential elements */
+  .hide-landscape {
+    display: none;
+  }
+}
+
+/* === High DPI Displays === */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  /* Sharper borders */
+  .card,
+  .input-field {
+    border-width: 0.5px;
+  }
+
+  /* Better image rendering */
+  img {
+    image-rendering: -webkit-optimize-contrast;
+  }
+}
+
+/* === Print Styles === */
+@media print {
+  /* Hide interactive elements */
+  .no-print,
+  nav,
+  button,
+  .modal,
+  .toast {
+    display: none !important;
+  }
+
+  /* Show print-only content */
+  .print-only {
+    display: block !important;
+  }
+
+  /* Optimize for printing */
+  body {
+    background: white;
+    color: black;
+  }
+
+  .card {
+    box-shadow: none;
+    border: 1px solid #ccc;
+    page-break-inside: avoid;
+  }
+
+  /* Print URLs after links */
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+}
+
+/* === Reduced Motion === */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* === Dark Mode === */
+@media (prefers-color-scheme: dark) {
+  /* Automatic dark mode adjustments */
+  :root {
+    color-scheme: dark;
+  }
+
+  /* Reduce image brightness in dark mode */
+  img:not(.keep-bright) {
+    opacity: 0.9;
+  }
+}
+
+/* === Container Queries (Future) === */
+@container (min-width: 400px) {
+  .card-title {
+    font-size: 1.25rem;
+  }
+}
+
+/* === Utility Classes === */
+
+/* Show only on specific breakpoints */
+.show-mobile {
+  display: block;
+}
+
+@media (min-width: 640px) {
+  .show-mobile {
+    display: none;
+  }
+}
+
+.show-tablet {
+  display: none;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .show-tablet {
+    display: block;
+  }
+}
+
+.show-desktop {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .show-desktop {
+    display: block;
+  }
+}
+
+/* Responsive text alignment */
+.text-mobile-center {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .text-mobile-center {
+    text-align: left;
+  }
+}
+
+/* Responsive spacing */
+.spacing-mobile {
+  padding: 1rem;
+}
+
+@media (min-width: 768px) {
+  .spacing-mobile {
+    padding: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .spacing-mobile {
+    padding: 3rem;
+  }
+}
